@@ -16,7 +16,7 @@
 [data-theme="light"] {
   --tekst-kleur: #121213f6;
   text-shadow: 0.1px 0.1px #000000;
-  --achtergrondkleur: repeating-linear-gradient(15deg, #ecfafdea, #02294be3, #90e1efe5, #03055ee3);
+  --achtergrondkleur: repeating-linear-gradient(15deg, #ecfafdea, #1a61a0e3, #90e1efe5, #03055ee3);
   --achtergrondkleur-hover: #03054e;
   --contrast-tekst-hover: #00b4d8;
   --box-shadow-nav: #03054e;
