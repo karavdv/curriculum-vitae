@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./../css/ThemeToggle.css";
+import "./../css/themeToggle.css";
 
 export const ThemeToggle = () => {
   // Haal de eerdere voorkeur uit localStorage of volg het systeemthema
