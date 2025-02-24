@@ -28,7 +28,7 @@ nav ul {
   padding: 1rem 3rem 1rem 2rem;
   margin-top: -17px;
   margin-right: -17px;
-  background: var(--achtergrond-nav);
+  background: var(--achtergrondkleur);
   opacity: 0;
   visibility: hidden;
   border-radius: 2rem;
