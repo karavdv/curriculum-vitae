@@ -1,0 +1,53 @@
+/*sections.css*/
+
+section {
+  width: 90%;
+  margin: 1rem 0;
+  padding: 1.5rem 1rem;
+  border-radius: 2rem;
+  box-shadow:
+    15px 10px 25px 8px var(--box-shadow-section),
+    -10px -8px 25px 8px var(--box-shadow-section);
+  text-align: center;
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(90px);
+  /* voor Safari-ondersteuning */
+}
+
+section p {
+  margin: 0.3rem auto;
+}
+
+section h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  padding: 0;
+}
+
+section li {
+  list-style: none;
+}
+
+
+@media (min-width: 700px) {
+
+  section {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    max-width: 700px;
+    box-shadow:
+      15px 10px 25px 8px var(--box-shadow-section);
+
+  }
+
+  section p,
+  section h3,
+  section li {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}

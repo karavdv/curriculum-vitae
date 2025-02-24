@@ -1,0 +1,123 @@
+/*index.css*/
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+[data-theme="light"] {
+  --tekst-kleur: #121213f6;
+  text-shadow: 0.1px 0.1px #000000;
+  --achtergrondkleur: repeating-linear-gradient(15deg, #ecfafdea, #02294be3, #90e1efe5, #03055ee3);
+  --achtergrondkleur-hover: #03054e;
+  --contrast-tekst-hover: #00b4d8;
+  --box-shadow-nav: #03054e;
+  --box-shadow-navlink: #0077b6;
+  --box-shadow-section: #03054e;
+  --achtergrond-nav: transparent;
+}
+
+[data-theme="dark"] {
+  --tekst-kleur: rgba(255, 255, 255, 0.87);
+  --achtergrondkleur: radial-gradient(circle at top left, #90e1efe5, #051b72, #03124e, #01061d, #01030f);
+  /*--achtergrondkleur:#01061d ;*/
+  --achtergrondkleur-hover: #e5e7f0;
+  --contrast-tekst-hover: #3f5efb;
+  --box-shadow-nav: #000000;
+  --box-shadow-navlink: #3f5efb;
+  --box-shadow-section: #192769;
+  --achtergrond-nav: linear-gradient(30deg, #0048bd, #011c33);
+}
+
+body {
+  background: var(--achtergrondkleur);
+  color: var(--tekst-kleur);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  margin: 0.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  order: 2;
+  margin-top: -4.5rem;
+}
+
+
+@media (min-width: 700px) {
+  #root {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    transition: width 1s ease-in-out, gap 1s ease-in-out;
+  }
+
+  .content-wrapper {
+    margin-top: 0;
+    align-items: center;
+    flex-grow: 2;
+    flex-shrink: 2;
+
+  }
+
+  .buttons {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    align-items: flex-end;
+    width: 50%;
+
+  }
+
+}
+
+@media (min-width: 1100px) {
+  #root {
+    width: 60%;
+    gap: 4rem;
+    transition: width 1s ease-in-out, gap 1s ease-in-out;
+    min-width: 800px;
+  }
+
+}
+
+@media (min-width: 1750px) {
+  #root {
+    width: 55%;
+    gap: 5rem;
+
+  }
+}

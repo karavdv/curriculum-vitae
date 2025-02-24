@@ -1,0 +1,207 @@
+/*navbar.css*/
+
+/* Algemene styling */
+nav {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  order: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background: var(--achtergrond-nav);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile menu (standaard verborgen) */
+.navbar-links {
+  list-style: none;
+  position: absolute;
+  padding: 1rem 3rem 1rem 2rem;
+  margin-top: -17px;
+  margin-right: -17px;
+  background: var(--achtergrond-nav);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 2rem;
+  /*transform: translateY(-50%);*/
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Toon menu als open */
+.navbar-links.open {
+  opacity: 1;
+  visibility: visible;
+  justify-items: center;
+  /*transform: translateX(-100%);*/
+}
+
+nav a {
+  width: max-content;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--tekst-kleur);
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  /* Voor Safari en Chrome */
+  -moz-tap-highlight-color: transparent;
+  /* Firefox */
+  -ms-tap-highlight-color: transparent;
+  /* Oudere Edge & IE */
+}
+
+nav a:hover {
+  color: var(--contrast-tekst-hover);
+  font-weight: bold;
+  background: var(--achtergrondkleur-hover);
+  border-radius: 2rem;
+  outline: none;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+  z-index: 1001;
+}
+
+/* Active hamburger (maakt kruisje) */
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+
+@media (min-width: 700px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 175px;
+    padding: 0;
+    padding-left: 1.2rem;
+    height: 100vh;
+    background-image: var(--achtergrond-nav);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    /* voor Safari-ondersteuning */
+    box-shadow: 1px 3px 15px 2px var(--box-shadow-nav);
+    border-radius: 0;
+    border-top-right-radius: 5rem;
+
+  }
+
+  nav a {
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+
+  .navbar-links {
+    position: absolute;
+    padding: 0;
+    padding-left: 0;
+    left: 0;
+    margin: 4.2rem 0 1rem 0;
+    width: 100%;
+    background: transparent;
+    text-align: left;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 3rem;
+    transform: none;
+  }
+
+  .navbar-links.open {
+    transform: none;
+  }
+
+  .navbar-links a:hover {
+    color: var(--contrast-tekst-hover);
+    font-weight: bold;
+    background: var(--achtergrondkleur-hover);
+    outline: none;
+    position: relative;
+    box-shadow: 0px 7px 10px 3px var(--box-shadow-navlink);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
+  .navbar-links a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 1.1rem;
+    box-shadow: 0 20px 0 0 var(--achtergrondkleur-hover);
+  }
+
+  .navbar-links a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 1.1rem;
+    box-shadow: 0 -20px 0 0 var(--achtergrondkleur-hover);
+  }
+
+}
+
+@media (min-width: 1100px) {
+  nav {
+
+    min-width: 250px;
+  }
+}
+
+@media (min-width: 1750px) {
+  nav {
+
+    min-width: 250px;
+  }
+}

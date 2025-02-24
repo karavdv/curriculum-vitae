@@ -1,0 +1,30 @@
+/*social.css*/
+
+/* linked in */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: 22px;
+  color: #fff;
+  background: #0077B5;
+  padding: 15px;
+  border-radius: 50%;
+  /*transform: translate(-1500%);*/
+
+}
+
+.social:hover {
+  color: #0077B5;
+  background: #fff;
+}
+
+@media (min-width: 700px) {
+
+  /* linked in */
+  .social {
+    margin: 1rem;
+  }
+}
