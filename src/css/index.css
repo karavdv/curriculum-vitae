@@ -17,19 +17,20 @@
   text-shadow: 0.1px 0.1px #0c007a;
   --achtergrondkleur: repeating-linear-gradient(15deg, #f5ffff, #bcecff, #9bf0ff, #84afff);
   --achtergrondkleur-hover: #03054e;
-  --contrast-tekst-hover: #03d5ff;
+  --contrast-tekst-hover: #e0faff;
   --box-shadow-nav: #03054e;
   --box-shadow-navlink: #0077b6;
   --box-shadow-section: #020bfa44;
   --achtergrond-nav: transparent;
   --hamburger-menu: #280096;
+  --kleur-download: #280096;
 }
 
 [data-theme="dark"] {
   --tekst-kleur: rgba(255, 255, 255, 0.87);
   --achtergrondkleur: radial-gradient(circle at top left, #90e1efe5, #051b72, #03124e, #01061d, #01030f);
   /*--achtergrondkleur:#01061d ;*/
-  --achtergrondkleur-hover: #e5e7f0;
+  --achtergrondkleur-hover: #ffffff;
   --contrast-tekst-hover: #3f5efb;
   --box-shadow-nav: #000000;
   --box-shadow-navlink: #3f5efb;

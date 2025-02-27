@@ -1,3 +1,6 @@
+import { PdfDownload } from "./PdfDownload";
+
+
 export const AlgemeneGegevens = () => {
     return (
         <section className="algemene-gegevens">
@@ -21,6 +24,12 @@ export const AlgemeneGegevens = () => {
                 <h3>Contact</h3>
                 <p>0472/29.26.70</p>
                 <p>vandeveldekara4@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>Download CV</h3>
+                <p>U kan mijn cv downloaden in een pdf om eenvoudig aan uw dossier te kunnen toevoegen.</p>
+                <PdfDownload />
             </div>
         </section>
     );
