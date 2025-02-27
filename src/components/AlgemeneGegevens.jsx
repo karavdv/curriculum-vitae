@@ -14,7 +14,7 @@ export const AlgemeneGegevens = () => {
                 Nu ik mijn herscholing tot full-stack developer heb afgerond, ben ik enthousiast op zoek naar een professionele kans om mijn kennis verder uit te breiden.
                 Hoewel ik een beginner ben op vlak van coderen, heb ik uitgebreide ervaring in probleemoplossend werken, zowel zelfstandig als in teamverband.
                 Daarnaast ben ik eindeloos nieuwsgierig en leergierig.
-                Aangezien coderen grotendeels bestaat uit het oplossen van problemen en het continu bijleren van nieuwe technologieën, weet ik zeker dat ik goed zal passen in deze sector."
+                Aangezien coderen grotendeels bestaat uit het oplossen van problemen en het continu bijleren van nieuwe technologieën, weet ik zeker dat ik goed zal passen in deze sector.
             </p>
 
             <div>

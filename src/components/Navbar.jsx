@@ -14,10 +14,10 @@ export const Navbar = () => {
         }
 
     };
+    
     return (
         <>
             <nav>
-
                 {/* Hamburger Menu */}
                 <div className="hamburger" onClick={toggleMenu} aria-label="Menu openen/sluiten"
                     aria-expanded={isOpen}>
@@ -33,17 +33,7 @@ export const Navbar = () => {
                     <li><NavLink to="/vaardigheden" onClick={toggleMenu}>Vaardigheden</NavLink></li>
 
                 </ul>
-
-
             </nav>
-
-
-
-
         </>
-
-
-
     )
-
 }

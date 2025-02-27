@@ -16,6 +16,7 @@
     background-size: cover;
     box-shadow: 2px 2px 4px rgb(255, 255, 255), -2px -2px 4px white;
     transition: background 1s ease;
+    cursor: pointer;
 }
 
 /* Verborgen checkbox */
@@ -35,7 +36,7 @@
     border-radius: 50%;
     background-color: rgba(243, 241, 241, 0.9);
     cursor: pointer;
-    transition: transform 2s ease;
+    transition: transform 1s ease;
 }
 
 /* Verplaatsen van de knop bij inschakelen van dark mode */
@@ -91,8 +92,6 @@
         margin-left: 0;
         border: 2px solid #5056fc;
         box-shadow: 2px 2px 4px #5ea4b1e5, -2px -2px 4px #90e1efe5;
-
-
     }
 
     .toggle-mode-checkbox-label {
