@@ -9,7 +9,7 @@ nav {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  background: var(--achtergrond-nav);
+  background: var(--achtergrondkleur);
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 50%;
@@ -81,7 +81,7 @@ nav a:hover {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: var(--hamburger-menu);
   transition: 0.3s;
   z-index: 1001;
 }
@@ -114,10 +114,7 @@ nav a:hover {
     padding: 0;
     padding-left: 1.2rem;
     height: 100vh;
-    background-image: var(--achtergrond-nav);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    /* voor Safari-ondersteuning */
+    background: var(--achtergrond-nav);
     box-shadow: 1px 3px 15px 2px var(--box-shadow-nav);
     border-radius: 0;
     border-top-right-radius: 5rem;

@@ -1,43 +1,51 @@
 export const Vaardigheden = () => {
-  const technischeVaardigheden = [
-    "Front-end ontwikkeling: HTML, CSS, JavaScript, React",
-    "Back-end ontwikkeling: PHP, Node.js, Laravel",
-    "Databases: Basiskennis van MySQL",
-    "Versiebeheer: Git (in VS Code) en GitHub",
-    "API-integratie: Werken met REST en Websocket API’s en AJAX",
-  ];
+  const technischeVaardigheden = {
+    "Front-end ontwikkeling": ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+    "Back-end ontwikkeling": ["PHP", "Node.js", "Laravel"],
+    "Databases": ["Basiskennis SQL", "MySQL", "SQLite", "Redis"],
+    "Versiebeheer": ["Git (in VS Code)", "GitHub"],
+    "API-integratie": ["REST API’s (private en public)", "Websocket API’s", "AJAX"],
+    "Methodologiëen": ["SCRUM", "Agile", "Mobile first"],
+    "Tools": ["Trello", "Kittl", "Canva"]
+  };
 
-  const zakelijkeVaardigheden = [
-    "Projectbeheer & organisatie: Ervaring met eventorganisatie en voorraadbeheer",
-    "Ondernemersmentaliteit: Ervaring met zelfstandig werken en zakelijke besluitvorming",
-    "Klantgerichtheid: Ervaring in verkoop, klantenservice en adviesverlening",
-    "Snel leren en aanpassen: Ervaring met het snel leren van nieuwe vaardigheden en werken in verschillende sectoren",
-    "Zelfstandigheid & teamwerk: Ervaring met het runnen van een bedrijf met een team"
-  ];
+  const zakelijkeVaardigheden = {
+    "Projectbeheer & organisatie": ["Eventorganisatie", "Voorraadbeheer"],
+    "Ondernemersmentaliteit": ["Zaakvoerster", "Zakelijke besluitvorming"],
+    "Klantgerichtheid": ["Verkoop", "Klantenservice", "Adviesverlening"],
+    "Snel leren en aanpassen": ["Snel leren van nieuwe vaardigheden", "Werken in verschillende sectoren"],
+    "Zelfstandigheid & teamwerk": ["Zelfstandig werken", "Werken in teamverband", "Teamleader"]
+  };
 
-  const talen = [
-    "Nederlands: Moedertaal",
-    "Engels: Zeer goed",
-    "Frans: Beperkt"
-  ];
+  const talen = ["Nederlands: Moedertaal", "Engels: Zeer goed", "Frans: Beperkt"];
 
   return (
     <section className="vaardigheden">
       <h2>Vaardigheden</h2>
 
       <h3>Technische vaardigheden</h3>
-      <ul>
-        {technischeVaardigheden.map((vaardigheid, index) => (
-          <li key={index}>{vaardigheid}</li>
-        ))}
-      </ul>
+      {Object.entries(technischeVaardigheden).map(([categorie, vaardigheden], index) => (
+        <details key={index}>
+          <summary>{categorie}</summary>
+          <ul className="vaardigheden">
+            {vaardigheden.map((vaardigheid, idx) => (
+              <li key={idx}>{vaardigheid}</li>
+            ))}
+          </ul>
+        </details>
+      ))}
 
       <h3>Zakelijke en persoonlijke vaardigheden</h3>
-      <ul>
-        {zakelijkeVaardigheden.map((vaardigheid, index) => (
-          <li key={index}>{vaardigheid}</li>
-        ))}
-      </ul>
+      {Object.entries(zakelijkeVaardigheden).map(([categorie, vaardigheden], index) => (
+        <details key={index}>
+          <summary>{categorie}</summary>
+          <ul className="vaardigheden">
+            {vaardigheden.map((vaardigheid, idx) => (
+              <li key={idx}>{vaardigheid}</li>
+            ))}
+          </ul>
+        </details>
+      ))}
 
       <h3>Taalvaardigheden</h3>
       <ul>
@@ -48,4 +56,3 @@ export const Vaardigheden = () => {
     </section>
   );
 };
-

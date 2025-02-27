@@ -13,15 +13,16 @@
 }
 
 [data-theme="light"] {
-  --tekst-kleur: #121213f6;
-  text-shadow: 0.1px 0.1px #000000;
-  --achtergrondkleur: repeating-linear-gradient(15deg, #ecfafdea, #1a61a0e3, #90e1efe5, #03055ee3);
+  --tekst-kleur: #280096;
+  text-shadow: 0.1px 0.1px #0c007a;
+  --achtergrondkleur: repeating-linear-gradient(15deg, #f5ffff, #bcecff, #9bf0ff, #84afff);
   --achtergrondkleur-hover: #03054e;
-  --contrast-tekst-hover: #00b4d8;
+  --contrast-tekst-hover: #03d5ff;
   --box-shadow-nav: #03054e;
   --box-shadow-navlink: #0077b6;
-  --box-shadow-section: #03054e;
+  --box-shadow-section: #020bfa44;
   --achtergrond-nav: transparent;
+  --hamburger-menu: #280096;
 }
 
 [data-theme="dark"] {
@@ -32,8 +33,9 @@
   --contrast-tekst-hover: #3f5efb;
   --box-shadow-nav: #000000;
   --box-shadow-navlink: #3f5efb;
-  --box-shadow-section: #192769;
+  --box-shadow-section: #2b49df94;
   --achtergrond-nav: linear-gradient(30deg, #0048bd, #011c33);
+  --hamburger-menu: rgba(255, 255, 255, 0.87);
 }
 
 body {

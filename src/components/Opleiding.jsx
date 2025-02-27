@@ -21,7 +21,7 @@ export const Opleiding = () => {
     <section className="opleiding">
       <h2>Opleidingsgeschiedenis</h2>
       <ul>
-        {opleidingen.map((opleiding, index) => (
+        {opleidingen.toReversed().map((opleiding, index) => (
           <li key={index} className="opleiding-item">
             <h3>{opleiding.instelling}</h3>
             <p><strong>{opleiding.diploma}</strong></p>
