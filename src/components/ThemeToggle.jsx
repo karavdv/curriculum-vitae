@@ -1,31 +1,40 @@
+/**
+ * Component: ThemeToggle.jsx
+ * ----------------------
+ * Dit component is een schakelaar om tussen light en dark mode te wisselen. 
+ * - De huidige thema-voorkeur wordt opgeslagen in `localStorage`.
+ * - Als er geen voorkeur is, wordt het systeemthema gebruikt.
+ * - Bij het wisselen van thema wordt het `data-theme` attribuut op `<body>` aangepast.
+ * - De hele knop is klikbaar, niet alleen de bol.
+ */
+
 import React, { useState, useEffect } from "react";
 import "./../css/themeToggle.css";
 
 export const ThemeToggle = () => {
-  // Haal de eerdere voorkeur uit localStorage of volg het systeemthema
-  /*const ThemeToggle = () => {
+
+  // Haal eerdere voorkeur op uit localStorage of gebruik systeemvoorkeur
+  const getInitialTheme = () => {
     const savedTheme = localStorage.getItem("darkMode");
-    if (savedTheme) {
-      return savedTheme === "dark";
+    if (savedTheme !== null) {
+      return savedTheme === "true"; // Zet om naar boolean
     }
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
-  };*/
+  };
 
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem("darkMode") === "true";
-});
+  const [isDarkMode, setIsDarkMode] = useState(getInitialTheme);
 
   useEffect(() => {
-    // Zet het `data-theme` attribuut op <body>
+    // Pas het `data-theme` attribuut op <body> toe
     document.body.setAttribute("data-theme", isDarkMode ? "dark" : "light");
 
     // Sla voorkeur op in localStorage
-    localStorage.setItem("darkMode", isDarkMode ? "dark" : "light");
+    localStorage.setItem("darkMode", isDarkMode);
   }, [isDarkMode]);
 
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);
-};
+  };
 
   return (
     <div className="toggle-mode custom-toggle" onClick={toggleTheme}>

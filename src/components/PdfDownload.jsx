@@ -1,3 +1,9 @@
+/**
+ * Component: PdfDownload.jsx
+ * ----------------------
+ * Toont een knop waarmee gebruikers een printbare versie van het CV kunnen downloaden als PDF-bestand.
+ */
+
 import "./../css/download.css";
 
 

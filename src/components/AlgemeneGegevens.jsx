@@ -1,3 +1,10 @@
+/**
+ * Component: AlgemeneGegevens.jsx
+ * ---------------------------------
+ * Dit component rendert de algemene persoons- en contactgegevens.
+ * Het bevat een downloadknop voor het downloaden van een printbare versie van het CV als PDF.
+ */
+
 import { PdfDownload } from "./PdfDownload";
 
 

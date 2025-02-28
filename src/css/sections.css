@@ -1,4 +1,9 @@
-/*sections.css*/
+/**
+ * sections.css
+ *
+ * Opmaak voor de verschillende secties; AlgemeneGegevens.jsx, Carriere.jsx, Opleiding.jsx, Vaardigheden.jsx.
+ * Vaardigheden.jsx heeft een extra css bestand, vaardigheden.css voor opmaak van elementen eigen enkel aan deze sectie.
+ */
 
 section {
   width: 90%;

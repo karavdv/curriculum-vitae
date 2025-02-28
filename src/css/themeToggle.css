@@ -1,10 +1,21 @@
-/*themeToggle.css*/
+/**
+ * themeToggle.css
+ *
+ * Opmaak voor ThemeToggle.jsx ingevoegd in App.jsx.
+ ** Algemene reset voor de toggle
+ ** Algemene lay-out
+ ** Witte schakelknop
+ ** Achtergrondafbeelding verandert
+ ** Icons als back-up moest er een probleem zijn met de afbeeldingen
+ ** Media query voor grotere schermen
+ */
 
 /* Algemene reset voor de toggle */
 .toggle-mode * {
     all: unset;
 }
 
+/* Algemene lay-out */
 .toggle-mode {
     position: relative;
     width: 65px;
@@ -49,7 +60,7 @@
 }
 
 /* Verplaatsen van de knop bij inschakelen van dark mode */
-[data-theme="dark"] .toggle-ball  {
+[data-theme="dark"] .toggle-ball {
     transform: translateX(40px);
 }
 
@@ -70,7 +81,7 @@
     opacity: 0;
 }
 
-/* Icons */
+/* Icons als back-up moest er een probleem zijn met de afbeeldingen */
 .sun,
 .moon {
     position: absolute;

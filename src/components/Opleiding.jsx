@@ -1,3 +1,12 @@
+/**
+ * Component: Opleiding.jsx
+ * ---------------------
+ * Toont een lijst van opleidingen in omgekeerde chronologische volgorde op basis van de array 'opleidingen'.
+ *
+ * Functionaliteit:
+ * - `toReversed()`: Keert de volgorde van de array om zodat de nieuwste opleiding eerst wordt getoond.
+ */
+
 export const Opleiding = () => {
   const opleidingen = [
     {

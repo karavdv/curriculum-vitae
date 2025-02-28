@@ -1,4 +1,13 @@
-/*navbar.css*/
+/**
+ * navbar.css
+ *
+ *  Opmaak voor de navigatiebalk en het hamburger-menu in Navbar.jsx ingevoegd in App.jsx.
+ ** Algemene styling 
+ ** Mobile menu (standaard verborgen)
+ ** Hamburger Menu Styling
+ ** Media queries 700px 1100px 1750px
+ */
+
 
 /* Algemene styling */
 nav {
@@ -99,7 +108,7 @@ nav a:hover {
   transform: rotate(-45deg) translate(6px, -5px);
 }
 
-
+/* Media queries 700px 1100px 1750px */
 @media (min-width: 700px) {
 
   .hamburger {

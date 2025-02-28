@@ -1,3 +1,9 @@
+ /**
+ * download.css
+ * Voor PdfDownload.jsx
+ * Opmaak voor de downloadknop ingevoegd op AlgemeneGegevens.jsx.
+ */
+
  .download {
      text-decoration: none;
  }

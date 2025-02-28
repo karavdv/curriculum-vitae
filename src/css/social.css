@@ -1,6 +1,9 @@
-/*social.css*/
+/**
+ * social.css
+ *
+ * Opmaak voor Social.jsx ingevoegd in App.jsx.
+ */
 
-/* linked in */
 .social {
   display: flex;
   justify-content: center;
@@ -21,7 +24,6 @@
 
 @media (min-width: 700px) {
 
-  /* linked in */
   .social {
     margin: 1rem;
   }

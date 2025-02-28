@@ -1,3 +1,13 @@
+/**
+ * Component: Vaardigheden.jsx
+ * ----------------------
+ * Deze component toont een overzicht van technische, zakelijke en taalvaardigheden.
+ * 
+ * Functionaliteiten:
+ * - De technische en zakelijke vaardigheden zijn onderverdeeld in categorieën.
+ * - Elke categorie is inklapbaar met een `<details>`-element.
+ */
+
 import "./../css/vaardigheden.css";
 
 

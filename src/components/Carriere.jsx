@@ -1,3 +1,10 @@
+/**
+ * Component: Carriere.jsx
+ * ---------------------
+ * Dit component rendert de gegevens van de professionele carrière .
+ * De werkervaringen worden dynamisch gegenereerd vanuit een array 'werkervaring'.
+ */
+
 export const Carriere = () => {
   const werkervaring = [
     {

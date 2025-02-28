@@ -1,4 +1,11 @@
-/*index.css*/
+/**
+ * index.css
+ *
+ *  Algemene opmaak en thema-instellingen voor de app.
+ * - Bevat CSS-variabelen voor dark/light mode.
+ * - Zorgt voor een responsieve lay-out met flexbox en media queries.
+ */
+
 
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 

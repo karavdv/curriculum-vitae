@@ -1,3 +1,18 @@
+/**
+ * Component: Navbar.jsx
+ * ---------------------
+ * Dit is de navigatiebalk met een hamburger-menu voor kleine schermen.
+ * - Bevat de links naar verschillende pagina's met `NavLink` uit React Router.
+ * 
+ * State:
+ * - `isOpen`: Houdt bij of het menu op klein scherm open of gesloten is.
+ * 
+ * Functies:
+ * - `toggleMenu`: Controleert of het scherm een gewoon of hamburger menu weergeeft op basis van de grootte van het scherm.
+ * - Op een klein scherm past het de status van het menu aan.
+ * - Op grotere schermen (≥700px) staat de state automatisch op gesloten.
+ */
+
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom"; // Link importeren om navigatie te voorkomen
 
@@ -8,7 +23,7 @@ export const Navbar = () => {
 
     const toggleMenu = () => {
         if (window.innerWidth >= 700) {
-            setIsOpen(false); // Sluit de dropdown als het scherm groter wordt
+            setIsOpen(false); // Sluit de dropdown automatisch als het scherm groter is
         } else {
             setIsOpen(!isOpen);
         }
