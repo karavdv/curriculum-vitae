@@ -1,16 +1,16 @@
-.download {
-    text-decoration: none;
-  }
-  
-  .download button {
-    display: flex;
-    justify-self: center;
-    font-weight: bold;
-    background-color: var(--achtergrondkleur-hover);
-    color: var(--contrast-tekst-hover);
-    box-shadow: 1px 1px 4px 2px var(--box-shadow-navlink);
-    padding: 0.6rem;
-    border-radius: 0.7rem;
-    margin: 1rem;
-    cursor: pointer;
-  }
+ .download {
+     text-decoration: none;
+ }
+
+ .download button {
+     display: flex;
+     justify-self: center;
+     font-weight: bold;
+     background-color: var(--achtergrondkleur-hover);
+     color: var(--contrast-tekst-hover);
+     box-shadow: 1px 1px 4px 2px var(--box-shadow-navlink);
+     padding: 0.6rem;
+     border-radius: 0.7rem;
+     margin: 1rem;
+     cursor: pointer;
+ }
