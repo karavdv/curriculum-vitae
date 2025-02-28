@@ -25,7 +25,6 @@ export const Vaardigheden = () => {
   return (
     <section className="vaardigheden">
       <h2>Vaardigheden</h2>
-      <p className="info">Klik op de vaardigheden voor meer informatie.</p>
 
       <h3>Technische vaardigheden</h3>
       {Object.entries(technischeVaardigheden).map(([categorie, vaardigheden], index) => (

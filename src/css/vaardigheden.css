@@ -4,6 +4,33 @@
 
 summary {
     cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px var(--box-shadow-summary);
+    position: relative;
+}
+
+summary::before {
+    content: "▶";
+    color: var(--contrast-tekst-hover);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 16px;
+    background: var(--tekst-kleur);
+    border-radius: 0.3rem;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+    background: var(--achtergrond-summary-after);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .vaardigheden li {
@@ -17,6 +44,10 @@ details {
     margin-left: 2.5rem;
 }
 
-.info {
-    font-style: italic;
+
+@media (min-width: 700px) {
+    summary {
+        box-shadow: none;
+    }
+
 }

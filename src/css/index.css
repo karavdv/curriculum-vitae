@@ -21,6 +21,8 @@
   --box-shadow-nav: #03054e;
   --box-shadow-navlink: #0077b6;
   --box-shadow-section: #020bfa44;
+  --box-shadow-summary:rgba(50, 41, 136, 0.2);
+  --achtergrond-summary-after:#3cf19d;
   --achtergrond-nav: transparent;
   --hamburger-menu: #280096;
   --kleur-download: #280096;
@@ -29,12 +31,13 @@
 [data-theme="dark"] {
   --tekst-kleur: rgba(255, 255, 255, 0.87);
   --achtergrondkleur: radial-gradient(circle at top left, #90e1efe5, #051b72, #03124e, #01061d, #01030f);
-  /*--achtergrondkleur:#01061d ;*/
   --achtergrondkleur-hover: #ffffff;
   --contrast-tekst-hover: #3f5efb;
   --box-shadow-nav: #000000;
   --box-shadow-navlink: #3f5efb;
   --box-shadow-section: #2b49df94;
+  --box-shadow-summary: rgba(255, 253, 253, 0.2);
+  --achtergrond-summary-after:#abffd8;
   --achtergrond-nav: linear-gradient(30deg, #0048bd, #011c33);
   --hamburger-menu: rgba(255, 255, 255, 0.87);
 }
