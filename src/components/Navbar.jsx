@@ -29,7 +29,7 @@ export const Navbar = () => {
         }
 
     };
-    
+
     return (
         <>
             <nav>
@@ -46,6 +46,11 @@ export const Navbar = () => {
                     <li><NavLink to="/opleiding" onClick={toggleMenu}>Opleidingen</NavLink></li>
                     <li><NavLink to="/carriere" onClick={toggleMenu}>Werkervaring</NavLink></li>
                     <li><NavLink to="/vaardigheden" onClick={toggleMenu}>Vaardigheden</NavLink></li>
+                    <li>
+                        <a href="https://github.com/karavdv/curriculum-vitae" target="_blank" rel="noopener noreferrer" className="github">
+                            <i className="fab fa-github"></i> Broncode
+                        </a>
+                    </li>
 
                 </ul>
             </nav>

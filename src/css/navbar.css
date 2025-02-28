@@ -30,6 +30,11 @@ nav ul {
   padding: 0;
 }
 
+.github i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
 /* Mobile menu (standaard verborgen) */
 .navbar-links {
   list-style: none;
