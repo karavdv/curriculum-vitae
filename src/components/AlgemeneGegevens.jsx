@@ -16,6 +16,7 @@ export const AlgemeneGegevens = () => {
             <div>
                 <p>Van de Velde Kara</p>
                 <p>04/12/1987</p>
+                <p>Rijbewijs B en eigen wagen.</p>
 
             </div>
 
