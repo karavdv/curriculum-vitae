@@ -37,9 +37,9 @@ export const AlgemeneGegevens = () => {
                 Ik maak ook gebruik van Node.js voor een websocket verbinding te maken met Kraken.
                 Het idee van een trading bot te maken is ontstaan omdat ik ervaring wou opdoen met API's. 
                 Ik pas in het project Websocket en Rest (private en public) API verbindingen toe.
-                De trading bot is zeker nog een work in process maar het kan hoop ik wel al een beeld geven van wat ik kan leren op welke tijdsspanne.
-                De code in de repositorie kan enkel volledig uitgetest worden door het toevoegen van je eigen API keys.
-                Wegens overduidelijke redenenen laat ik mijn eigen keys niet in de openbare code staan.
+                De trading bot is zeker nog een work in progress maar het kan hoop ik wel al een beeld geven van wat ik kan leren op welke tijdsspanne.
+                De code in de repository kan enkel volledig uitgetest worden door het toevoegen van je eigen API keys.
+                Wegens overduidelijke redenen laat ik mijn eigen keys niet in de openbare code staan.
                 Binnenkort zal ik het project wel online zetten zodat je het kan testen zonder zelf keys te moeten toevoegen.
             </p>
 
