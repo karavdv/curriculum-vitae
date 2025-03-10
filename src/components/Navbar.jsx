@@ -48,10 +48,14 @@ export const Navbar = () => {
                     <li><NavLink to="/vaardigheden" onClick={toggleMenu}>Vaardigheden</NavLink></li>
                     <li>
                         <a href="https://github.com/karavdv/curriculum-vitae" target="_blank" rel="noopener noreferrer" className="github">
-                            <i className="fab fa-github"></i> Broncode
+                            <i className="fab fa-github"></i> Broncode CV website
                         </a>
                     </li>
-
+                    <li>
+                        <a href="https://github.com/karavdv/Berty" target="_blank" rel="noopener noreferrer" className="github">
+                            <i className="fab fa-github"></i> Broncode trading bot - afstudeerproject
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </>
