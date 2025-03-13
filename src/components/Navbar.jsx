@@ -13,7 +13,7 @@
  * - Op grotere schermen (≥700px) staat de state automatisch op gesloten.
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from "react-router-dom"; // Link importeren om navigatie te voorkomen
 
 import "./../css/navbar.css";
@@ -46,6 +46,7 @@ export const Navbar = () => {
                     <li><NavLink to="/opleiding" onClick={toggleMenu}>Opleidingen</NavLink></li>
                     <li><NavLink to="/carriere" onClick={toggleMenu}>Werkervaring</NavLink></li>
                     <li><NavLink to="/vaardigheden" onClick={toggleMenu}>Vaardigheden</NavLink></li>
+                    <li><NavLink to="/referentie" onClick={toggleMenu}>Referentie</NavLink></li>
                     <li>
                         <a href="https://github.com/karavdv/curriculum-vitae" target="_blank" rel="noopener noreferrer" className="github">
                             <i className="fab fa-github"></i> Broncode CV website

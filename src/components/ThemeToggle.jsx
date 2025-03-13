@@ -8,7 +8,7 @@
  * - De hele knop is klikbaar, niet alleen de bol.
  */
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./../css/themeToggle.css";
 
 export const ThemeToggle = () => {

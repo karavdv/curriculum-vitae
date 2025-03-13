@@ -1,3 +1,8 @@
+/**
+ * Component: Social.jsx
+ * ---------------------
+ * Dit component bevat een link naar mijn LinkedIn-profiel.
+ */
 import './../css/social.css'
 
 export const Social = () => {

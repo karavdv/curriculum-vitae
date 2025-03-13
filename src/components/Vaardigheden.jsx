@@ -10,7 +10,6 @@
 
 import "./../css/vaardigheden.css";
 
-
 export const Vaardigheden = () => {
   const technischeVaardigheden = {
     "Front-end ontwikkeling": ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],

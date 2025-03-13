@@ -1,7 +1,7 @@
 /**
  * sections.css
  *
- * Opmaak voor de verschillende secties; AlgemeneGegevens.jsx, Carriere.jsx, Opleiding.jsx, Vaardigheden.jsx.
+ * Opmaak voor de verschillende secties; AlgemeneGegevens.jsx, Carriere.jsx, Opleiding.jsx, Vaardigheden.jsx, Referentie.jsx.
  * Vaardigheden.jsx heeft een extra css bestand, vaardigheden.css voor opmaak van elementen eigen enkel aan deze sectie.
  */
 
@@ -35,6 +35,24 @@ section ul {
 
 section li {
   list-style: none;
+}
+
+/* Opmaak voor de download knoppen op algemene gegevens en referentie */
+.download {
+  text-decoration: none;
+}
+
+.download button {
+  display: flex;
+  justify-self: center;
+  font-weight: bold;
+  background-color: var(--achtergrondkleur-hover);
+  color: var(--contrast-tekst-hover);
+  box-shadow: 1px 1px 4px 2px var(--box-shadow-navlink);
+  padding: 0.6rem;
+  border-radius: 0.7rem;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 @media (min-width: 700px) {

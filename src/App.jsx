@@ -11,6 +11,7 @@ import { AlgemeneGegevens } from './components/AlgemeneGegevens';
 import { Navbar } from './components/Navbar'
 import { ThemeToggle } from "./components/ThemeToggle";
 import { Social } from "./components/Social";
+import { Referentie } from "./components/Referentie";
 
 export function App() {
 
@@ -26,6 +27,7 @@ export function App() {
           <Route path="/opleiding" element={<Opleiding />} />
           <Route path="/carriere" element={<Carriere />} />
           <Route path="/vaardigheden" element={<Vaardigheden />} />
+          <Route path="/referentie" element={<Referentie />} />
           <Route path="/" element={<AlgemeneGegevens />} />
         </Routes>
       </div>

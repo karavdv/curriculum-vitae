@@ -5,9 +5,6 @@
  * Het bevat een downloadknop voor het downloaden van een printbare versie van het CV als PDF.
  */
 
-import { PdfDownload } from "./PdfDownload";
-
-
 export const AlgemeneGegevens = () => {
     return (
         <section className="algemene-gegevens">
@@ -31,11 +28,11 @@ export const AlgemeneGegevens = () => {
                 Wil je alvast een voorbeeld van wat ik kan? In het menu vind je de Github repositories terug van deze site en van mijn afstudeerproject.
             </p>
             <p>
-                Als afstudeerproject heb ik een crypto trading bot gemaakt voor het Kraken platform. 
-                Ik kreeg 30 dagen om aan het project te werken met als doel een framework te leren gebruiken. 
-                Omdat mijn opleiding full-stack is heb ik er voor gekozen 2 frameworks te combineren; Laravel en React. 
+                Als afstudeerproject heb ik een crypto trading bot gemaakt voor het Kraken platform.
+                Ik kreeg 30 dagen om aan het project te werken met als doel een framework te leren gebruiken.
+                Omdat mijn opleiding full-stack is heb ik er voor gekozen 2 frameworks te combineren; Laravel en React.
                 Ik maak ook gebruik van Node.js voor een websocket verbinding te maken met Kraken.
-                Het idee van een trading bot te maken is ontstaan omdat ik ervaring wou opdoen met API's. 
+                Het idee van een trading bot te maken is ontstaan omdat ik ervaring wou opdoen met API's.
                 Ik pas in het project Websocket en Rest (private en public) API verbindingen toe.
                 De trading bot is zeker nog een work in progress maar het kan hoop ik wel al een beeld geven van wat ik kan leren op welke tijdsspanne.
                 De code in de repository kan enkel volledig uitgetest worden door het toevoegen van je eigen API keys.
@@ -52,7 +49,9 @@ export const AlgemeneGegevens = () => {
             <div>
                 <h3>Download CV</h3>
                 <p>U kan mijn cv downloaden in een pdf om eenvoudig aan uw dossier te kunnen toevoegen.</p>
-                <PdfDownload />
+                <a href="/CVKaraVandeVelde.pdf" download="CVKaraVandeVelde.pdf" className="download">
+                    <button>Download CV</button>
+                </a>
             </div>
         </section>
     );
