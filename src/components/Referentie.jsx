@@ -39,7 +39,7 @@ export const Referentie = () => {
                 <div>
                     <h3>Download referentie</h3>
                     <p>U kan het originele pdf bestand met de contactgegevens van Bart Roosen downloaden via onderstaande knop.</p>
-                    <a href="/referentieKaraVandeVelde" download="referentieKaraVandeVelde.pdf" className="download">
+                    <a href="/referentieKaraVandeVelde.pdf" download="referentieKaraVandeVelde.pdf" className="download">
                         <button>Download referentie</button>
                     </a>
                 </div>
