@@ -46,11 +46,12 @@ section li {
   display: flex;
   justify-self: center;
   font-weight: bold;
-  background-color: var(--achtergrondkleur-hover);
+  background-color: var(--download-achtergrond);
   color: var(--contrast-tekst-hover);
   box-shadow: 1px 1px 4px 2px var(--box-shadow-navlink);
   padding: 0.6rem;
   border-radius: 0.7rem;
+  border-color: var(--download-border);
   margin: 1rem;
   cursor: pointer;
 }

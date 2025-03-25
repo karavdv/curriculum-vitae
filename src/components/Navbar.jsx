@@ -49,12 +49,12 @@ export const Navbar = () => {
                     <li><NavLink to="/referentie" onClick={toggleMenu}>Referentie</NavLink></li>
                     <li>
                         <a href="https://github.com/karavdv/curriculum-vitae" target="_blank" rel="noopener noreferrer" className="github">
-                            <i className="fab fa-github"></i> Broncode CV website
+                            <i className="fab fa-github"></i> Broncode <p className='nav-broncode'>CV website</p>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/karavdv/Berty" target="_blank" rel="noopener noreferrer" className="github">
-                            <i className="fab fa-github"></i> Broncode trading bot - afstudeerproject
+                            <i className="fab fa-github"></i> Broncode <p className='nav-broncode'>trading bot - afstudeerproject</p>
                         </a>
                     </li>
                 </ul>

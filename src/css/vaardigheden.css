@@ -21,7 +21,7 @@ summary {
 
 summary::before {
     content: "▶";
-    color: var(--contrast-tekst-hover);
+    color: var(--kleur-arrow-summary);
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -35,6 +35,7 @@ summary::before {
 
 details[open] summary::before {
     transform: rotate(90deg);
+    color: var(--kleur-arrow-summary-after);
     background: var(--achtergrond-summary-after);
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
 }

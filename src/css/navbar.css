@@ -18,7 +18,7 @@ nav {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  background: var(--achtergrondkleur);
+  background: var(--achtergrond-nav);
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 50%;
@@ -35,6 +35,10 @@ nav ul {
   font-size: 1.2rem;
 }
 
+.nav-broncode {
+  margin: 0;
+}
+
 /* Mobile menu (standaard verborgen) */
 .navbar-links {
   list-style: none;
@@ -42,7 +46,7 @@ nav ul {
   padding: 1rem 3rem 1rem 2rem;
   margin-top: -17px;
   margin-right: -17px;
-  background: var(--achtergrondkleur);
+  background: var(--achtergrond-nav);
   opacity: 0;
   visibility: hidden;
   border-radius: 2rem;
@@ -139,6 +143,7 @@ nav a:hover {
     margin: 0.7rem 0;
     text-align: left;
     padding-left: 2rem;
+    z-index: 1;
   }
 
   .navbar-links {
@@ -148,11 +153,11 @@ nav a:hover {
     margin: 5rem 0 1rem 0;
     width: 100%;
     background: transparent;
-    text-align: left;
     opacity: 1;
     visibility: visible;
     border-radius: 3rem;
     transform: none;
+    z-index: 1;
   }
 
   .navbar-links.open {
@@ -170,6 +175,7 @@ nav a:hover {
     border-bottom-right-radius: 0;
     border-top-left-radius: 1.25rem;
     border-bottom-left-radius: 1.25rem;
+    z-index: 1;
   }
 
   .navbar-links a:hover::after {
@@ -183,6 +189,7 @@ nav a:hover {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 1.1rem;
     box-shadow: 0 20px 0 0 var(--achtergrondkleur-hover);
+    z-index: 0;
   }
 
   .navbar-links a:hover::before {
@@ -196,6 +203,7 @@ nav a:hover {
     border-top-left-radius: 0;
     border-top-right-radius: 1.1rem;
     box-shadow: 0 -20px 0 0 var(--achtergrondkleur-hover);
+    z-index: 0;
   }
 }
 

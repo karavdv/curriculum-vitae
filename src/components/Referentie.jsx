@@ -10,7 +10,6 @@ export const Referentie = () => {
         <section className="referentie">
             <h2>Referentie</h2>
             <div className="referentie-card">
-                <blockquote>
                     <p>
                        " Van 10 juni 2024 tot en met 21 februari 2025 was Kara bij mij in opleiding "Full Stack PHP Ontwikkeling".
                     </p>
@@ -35,7 +34,6 @@ export const Referentie = () => {
                     <p>Met vriendelijke groeten, <br />
                         Bart Roosen"
                     </p>
-                </blockquote>
                 <div>
                     <h3>Download referentie</h3>
                     <p>U kan het originele pdf bestand met de contactgegevens van Bart Roosen downloaden via onderstaande knop.</p>
